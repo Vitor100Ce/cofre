@@ -2,11 +2,12 @@
 function processData(input){
 
 
-    const separaDados = input.trim().split(' ');
+    const separaDados = input.trim().split('\n');
     const senhaCorreta = separaDados[0];
     const senhaDigitada = separaDados[1];
 
-    const senhaDigitadaSanitizada = senhaDigitada.split('').reduce(
+    const caracteres = senhaDigitada.split('');
+    const senhaDigitadaSanitizada = caracteres.reduce(
       (acumulador, valorAtual) => {
         const letraSenhaCorreta = senhaCorreta[acumulador.length]
         if(valorAtual === letraSenhaCorreta) {
@@ -21,10 +22,6 @@ function processData(input){
     } else{
         console.log('NAO');
     }
-
-  
 }
 
-
-
-processData('cubos cuggbyos');
+processData('cubos\ncuggbyos');
