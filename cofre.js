@@ -22,8 +22,7 @@ function processData(input){
         console.log('NAO');
     }
 
-    console.log(senhaDigitada)
-
+  
 }
 
 
