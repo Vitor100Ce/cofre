@@ -8,10 +8,6 @@ Input Format
 
 A entrada consistirá em duas linhas, na primeira linha estará a senha correta, de até S caracteres. Na segunda linha estará a palavra digitada pela pessoa, de até N caracteres.
 
-Constraints
-
-S ≤ 10^3 N ≤ 10^5
-
 Output Format
 
 Imprima “SIM” caso o cofre abra. Caso contrário, imprimir “NAO”.
